@@ -25,7 +25,7 @@ import Quality from "../components/quality/Quality";
 import WhyUs from "../components/why-us/WhyUs";
 import Carousel from "../components/common/Carousel";
 import { useEffect } from "react";
-import { Helmet } from "react-helmet";
+import SetMetaTags from "../components/meta-tags/SetMetaTags";
 
 const Home = () => {
   const { pathname } = useLocation();
@@ -36,14 +36,13 @@ const Home = () => {
 
   return (
     <>
-      <Helmet>
-        <title>{metaTags.site_name}</title>
-        <meta name="description" content={metaTags.site_desc}></meta>
-        <meta
-          name="keywords"
-          content="асфалтиране, асфалтиране на София, асфалтиране на Пловдив, полагане на асфалт, асфалтиране на пътища, асфалтиране на улици, асфалтиране на дророве, асфалтиране на алеи, асфалтиране на площи"
-        />
-      </Helmet>
+      <SetMetaTags
+        title={metaTags.site_name}
+        description={metaTags.site_desc}
+        keywords={
+          "асфалтиране, асфалтиране на София, асфалтиране на Пловдив, полагане на асфалт"
+        }
+      />
       <main className="w-full h-auto">
         <section className="container mx-auto relative h-[40vh] md:h-[60vh] lg:h-[70vh] pt-5 md:pt-10">
           <Carousel timeout={3000}>{slides}</Carousel>

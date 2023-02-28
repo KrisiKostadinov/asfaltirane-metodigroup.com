@@ -4,6 +4,7 @@ import ClientReviews from "../components/clients-reviews/ClientsReviews";
 import Quality from "../components/quality/Quality";
 import { icons, metaTags } from "../constants";
 import logo from "../assets/images/logo.png";
+import SetMetaTags from "../components/meta-tags/SetMetaTags";
 
 const About = () => {
   const { pathname } = useLocation();
@@ -14,6 +15,13 @@ const About = () => {
 
   return (
     <>
+      <SetMetaTags
+        title={`За нас - ${metaTags.site_name}`}
+        description={"От asfaltirane-metodigroup се занимаваме с асфалтиране повече от 20 години. Имаме бригада от специалисти, доказали се в областта си."}
+        keywords={
+          "асфалтиране, асфалтиране на София, асфалтиране на Пловдив, полагане на асфалт"
+        }
+      />
       <div className="w-full mt-10">
         <h1 className="heading-1 text-center">За нас</h1>
         <div className="container mx-auto grid md:grid-cols-2 gap-10 mt-10 max-sm:px-5">

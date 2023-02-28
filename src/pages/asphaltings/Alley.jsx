@@ -4,6 +4,7 @@ import Quality from "../../components/quality/Quality";
 import WhyUs from "../../components/why-us/WhyUs";
 import alleyAsphalting from "../../assets/images/asphaltings/alley-asphalting.jpeg";
 import { Link, useLocation } from "react-router-dom";
+import SetMetaTags from "../../components/meta-tags/SetMetaTags";
 
 const Alley = () => {
   const { pathname } = useLocation();
@@ -14,6 +15,13 @@ const Alley = () => {
 
   return (
     <>
+      <SetMetaTags
+        title={`Асфалтиране на алеи - ${metaTags.site_name}`}
+        description={"Предлагаме катествено асфалтиране на всякакви алеи, малки и големи площи, полагаме асфалт на улици, пътища дворове, площадки и други на достъпни цени."}
+        keywords={
+          "асфалтиране, асфалтиране на София, полагане на асфалт, асфалтиране на алей, полагане на асфалт на алеи, асфалтиране на малки площи, асфалтиране на големи площи"
+        }
+      />
       <section className="w-full py-10 max-md:px-5">
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-4xl">

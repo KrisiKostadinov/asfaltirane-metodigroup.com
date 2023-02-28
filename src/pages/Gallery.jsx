@@ -11,6 +11,15 @@ const Gallery = () => {
 
   return (
     <>
+      <SetMetaTags
+        title={`Галерия - ${metaTags.site_name}`}
+        description={
+          "Това са част от нашите проекти през дълогодишния ни опит в областта на асфалтирането."
+        }
+        keywords={
+          "асфалтиране, асфалтиране на София, асфалтиране на Пловдив, асфалтиране на Варна, полагане на асфалт, ремонт на асфалт"
+        }
+      />
       <div className="container mx-auto">
         <div className="mt-10">
           <h1 className="heading-1 text-center">Галерия</h1>
