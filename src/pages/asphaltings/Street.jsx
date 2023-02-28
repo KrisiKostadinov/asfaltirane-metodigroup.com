@@ -15,26 +15,6 @@ const Street = () => {
 
   return (
     <>
-      <MetaTags>
-        <title>Асфалтиране на улици в София и страната - {metaTags.site_name}</title>
-        <link
-          rel="canonical"
-          href="https://asfaltirane-metodigroup.com/asfaltirane-na-ulitsi"
-        />
-        <meta
-          name="description"
-          content="Асфалтиране на улици в град София и цялата страна на достъпни цени. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta name="og:title" content={`Асфалтиране на улици в София и страната - ${metaTags.site_name}`} />
-        <meta
-          name="og:description"
-          content="Асфалтиране на улици в град София и цялата страна на достъпни цени. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta
-          name="og:url"
-          content="https://asfaltirane-metodigroup.com/asfaltirane-na-ulitsi"
-        />
-      </MetaTags>
       <section className="w-full py-10 max-md:px-10">
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-4xl">
