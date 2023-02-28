@@ -88,7 +88,7 @@ export const navItems = [
   },
   {
     name: "Галерия",
-    link: "/gallery",
+    link: "/galeria",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
