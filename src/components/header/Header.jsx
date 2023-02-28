@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import { MetaTags } from "react-meta-tags";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
-import { navItems } from "../../constants";
+import { metaTags, navItems } from "../../constants";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -29,6 +29,14 @@ const Header = () => {
                 alt="Асфалтиране Методи Строй"
               />
             </a>
+            <MetaTags>
+              <meta
+                property="og:image"
+                content="../../assets/images/logo.png"
+              />
+              <meta property="og:image:alt" content={metaTags.site_desc} />
+              <meta name="og:site_name" content={metaTags.site_name} />
+            </MetaTags>
           </div>
           <nav>
             <ul className="relative md:flex hidden gap-2 text-lg">

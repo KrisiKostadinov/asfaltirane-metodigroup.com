@@ -25,6 +25,7 @@ import Quality from "../components/quality/Quality";
 import WhyUs from "../components/why-us/WhyUs";
 import Carousel from "../components/common/Carousel";
 import { useEffect } from "react";
+import { MetaTags } from "react-meta-tags";
 
 const Home = () => {
   const { pathname } = useLocation();
@@ -49,6 +50,16 @@ const Home = () => {
             </Link>
           </div>
         </section>
+
+        {/* meta tags */}
+        <MetaTags>
+          <title>Асфалтиране София и страната</title>
+          <link rel="canonical" href="https://asfaltirane-metodigroup.com" />
+          <meta name="description" content="Предлагаме асфалтиране в град София и страната на достъпни цени. Обадете се още сега! 0899 07 67 89" />
+          <meta name="og:title" content="Асфалтиране София и страната" />
+          <meta name="og:description" content="Предлагаме асфалтиране в град София и страната на достъпни цени. Обадете се още сега! 0899 07 67 89" />
+          <meta name="og:url" content="https://asfaltirane-metodigroup.com" />
+        </MetaTags>
 
         <section>
           <div className="mt-10 mb-12 text-center">

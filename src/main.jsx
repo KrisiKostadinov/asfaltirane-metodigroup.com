@@ -2,8 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import { Home, About } from "./pages/index";
+import { Home, About, Gallery, Contacts, Rouds } from "./pages/index";
 import MainLayout from "./layouts/MainLayout";
+import Street from "./pages/asphaltings/Street";
+import Yard from "./pages/asphaltings/Yard";
+import Alley from "./pages/asphaltings/Alley";
+import Sidewalk from "./pages/asphaltings/Sidewalk";
+import SmallAndBig from "./pages/asphaltings/SmallAndBig";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +22,39 @@ const router = createBrowserRouter([
       {
         path: "/za-nas",
         element: <About />,
-      }
+      },
+      {
+        path: "/contacts",
+        element: <Contacts />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+      {
+        path: "/asfaltirane-na-patishta",
+        element: <Rouds />,
+      },
+      {
+        path: "/asfaltirane-na-ulitsi",
+        element: <Street />,
+      },
+      {
+        path: "/afaltirane-na-dvor",
+        element: <Yard />,
+      },
+      {
+        path: "/asfaltirane-na-alei",
+        element: <Alley />,
+      },
+      {
+        path: "/narezhdane-na-trotoar",
+        element: <Sidewalk />,
+      },
+      {
+        path: "/asfaltirane-na-malki-i-golemi-ploshti",
+        element: <SmallAndBig />,
+      },
     ],
   },
 ]);
