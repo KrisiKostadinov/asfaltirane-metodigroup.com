@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { MetaTags } from "react-meta-tags";
 import ClientReviews from "../components/clients-reviews/ClientsReviews";
 import Quality from "../components/quality/Quality";
 import { icons, metaTags } from "../constants";
@@ -15,26 +14,6 @@ const About = () => {
 
   return (
     <>
-      <MetaTags>
-        <title>За нас - {metaTags.site_name}</title>
-        <link
-          rel="canonical"
-          href="https://asfaltirane-metodigroup.com/za-nas"
-        />
-        <meta
-          name="description"
-          content="Дълогогодишен опит в асфалтирането. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta name="og:title" content={`За нас - ${metaTags.site_name}`} />
-        <meta
-          name="og:description"
-          content="Дълогогодишен опит в асфалтирането. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta
-          name="og:url"
-          content="https://asfaltirane-metodigroup.com/za-nas"
-        />
-      </MetaTags>
       <div className="w-full mt-10">
         <h1 className="heading-1 text-center">За нас</h1>
         <div className="container mx-auto grid md:grid-cols-2 gap-10 mt-10 max-sm:px-5">
