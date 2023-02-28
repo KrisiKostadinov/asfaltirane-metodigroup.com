@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { MetaTags } from "react-meta-tags";
 
 import ClientsReviews from "../../components/clients-reviews/ClientsReviews";
 import Quality from "../../components/quality/Quality";
 import WhyUs from "../../components/why-us/WhyUs";
 import streetAsphalting from "../../assets/images/asphaltings/street-asphalting.jpeg";
-import { metaTags } from "../../constants";
 
 const Street = () => {
   const { pathname } = useLocation();

@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Quality from "../components/quality/Quality";
 import ClientReviews from "../components/clients-reviews/ClientsReviews";
-import { icons, metaTags } from "../constants";
-import { MetaTags } from "react-meta-tags";
+import { icons } from "../constants";
 
 const Contacts = () => {
   const { pathname } = useLocation();
@@ -14,20 +13,6 @@ const Contacts = () => {
 
   return (
     <>
-      <MetaTags>
-        <title>Контакти - {metaTags.site_name}</title>
-        <link rel="canonical" href="https://asfaltirane-metodigroup.com/contacts" />
-        <meta
-          name="description"
-          content="Свържете се с нас по някои от следните начини. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta name="og:title" content={`Контакти - ${metaTags.site_name}`} />
-        <meta
-          name="og:description"
-          content="Свържете се с нас по някои от следните начини. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta name="og:url" content="https://asfaltirane-metodigroup.com/contacts" />
-      </MetaTags>
       <div className="w-full">
         <div className="w-full text-center mt-10">
           <h1 className="heading-1">Кoнтакти</h1>

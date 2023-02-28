@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { MetaTags } from "react-meta-tags";
 import ClientsReviews from "../../components/clients-reviews/ClientsReviews";
 import Quality from "../../components/quality/Quality";
 import WhyUs from "../../components/why-us/WhyUs";
 import yardAsphalting from "../../assets/images/asphaltings/yard-asphalting.jpeg";
-import { metaTags } from "../../constants";
 
 const Yard = () => {
   const { pathname } = useLocation();
@@ -16,31 +14,6 @@ const Yard = () => {
 
   return (
     <>
-      <MetaTags>
-        <title>
-          Асфалтиране на дворове в София и страната - {metaTags.site_name}
-        </title>
-        <link
-          rel="canonical"
-          href="https://asfaltirane-metodigroup.com/afaltirane-na-dvor"
-        />
-        <meta
-          name="description"
-          content="Фирма за асфалтиране на дворове в град София и страната на достъпни цени. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta
-          name="og:title"
-          content={`Асфалтиране на дворове в София и страната - ${metaTags.site_name}`}
-        />
-        <meta
-          name="og:description"
-          content="Фирма за асфалтиране на дворове в град София и страната на достъпни цени. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta
-          name="og:url"
-          content="https://asfaltirane-metodigroup.com/afaltirane-na-dvor"
-        />
-      </MetaTags>
       <section className="w-full py-10 max-md:px-5">
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-4xl">

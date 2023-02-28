@@ -5,8 +5,6 @@ import WhyUs from "../../components/why-us/WhyUs";
 import smallAsphalting from "../../assets/images/asphaltings/small-asphalting.jpeg";
 import bigAsphalting from "../../assets/images/asphaltings/big-asphalting.jpeg";
 import { Link, useLocation } from "react-router-dom";
-import { MetaTags } from "react-meta-tags";
-import { metaTags } from "../../constants";
 
 const SmallAndBig = () => {
   const { pathname } = useLocation();
@@ -17,31 +15,6 @@ const SmallAndBig = () => {
 
   return (
     <>
-      <MetaTags>
-        <title>
-          Асфалтиране на площи в София и страната - {metaTags.site_name}
-        </title>
-        <link
-          rel="canonical"
-          href="https://asfaltirane-metodigroup.com/asfaltirane-na-malki-i-golemi-ploshti"
-        />
-        <meta
-          name="description"
-          content="Асфалтираме малки, големи площи, алеи, пътища и др. в град София и страната на достъпни цени. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta
-          name="og:title"
-          content={`Асфалтиране на площи в София и страната - ${metaTags.site_name}`}
-        />
-        <meta
-          name="og:description"
-          content="Асфалтираме малки, големи площи, алеи, пътища и др. град София и страната на достъпни цени. Обадете се още сега! 0899 07 67 89"
-        />
-        <meta
-          name="og:url"
-          content="https://asfaltirane-metodigroup.com/asfaltirane-na-malki-i-golemi-ploshti"
-        />
-      </MetaTags>
       <section className="w-full py-10 max-md:px-5">
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-4xl">
