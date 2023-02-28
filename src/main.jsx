@@ -28,7 +28,7 @@ const router = createBrowserRouter([
         element: <Contacts />,
       },
       {
-        path: "/gallery",
+        path: "/galeria",
         element: <Gallery />,
       },
       {

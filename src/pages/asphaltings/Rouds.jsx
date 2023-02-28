@@ -5,6 +5,7 @@ import Quality from "../../components/quality/Quality";
 import bigAsphalting from "../../assets/images/asphaltings/big-asphalting.jpeg";
 import { Link, useLocation } from "react-router-dom";
 import SetMetaTags from "../../components/meta-tags/SetMetaTags";
+import { metaTags } from "../../constants";
 
 const Rouds = () => {
   const { pathname } = useLocation();

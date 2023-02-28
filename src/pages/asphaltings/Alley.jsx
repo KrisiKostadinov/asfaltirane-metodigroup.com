@@ -5,6 +5,7 @@ import WhyUs from "../../components/why-us/WhyUs";
 import alleyAsphalting from "../../assets/images/asphaltings/alley-asphalting.jpeg";
 import { Link, useLocation } from "react-router-dom";
 import SetMetaTags from "../../components/meta-tags/SetMetaTags";
+import { metaTags } from "../../constants";
 
 const Alley = () => {
   const { pathname } = useLocation();

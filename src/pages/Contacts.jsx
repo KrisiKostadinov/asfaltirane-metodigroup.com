@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Quality from "../components/quality/Quality";
 import ClientReviews from "../components/clients-reviews/ClientsReviews";
-import { icons } from "../constants";
+import { icons, metaTags } from "../constants";
+import SetMetaTags from "../components/meta-tags/SetMetaTags";
 
 const Contacts = () => {
   const { pathname } = useLocation();

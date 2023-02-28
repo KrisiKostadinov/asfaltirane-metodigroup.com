@@ -5,6 +5,7 @@ import WhyUs from "../../components/why-us/WhyUs";
 import sidewalkAsphalting from "../../assets/images/asphaltings/sidewalk-asphalting.jpeg";
 import { Link, useLocation } from "react-router-dom";
 import SetMetaTags from "../../components/meta-tags/SetMetaTags";
+import { metaTags } from "../../constants";
 
 const Sidewalk = () => {
   const { pathname } = useLocation();

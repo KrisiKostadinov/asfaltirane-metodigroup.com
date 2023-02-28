@@ -6,6 +6,7 @@ import Quality from "../../components/quality/Quality";
 import WhyUs from "../../components/why-us/WhyUs";
 import streetAsphalting from "../../assets/images/asphaltings/street-asphalting.jpeg";
 import SetMetaTags from "../../components/meta-tags/SetMetaTags";
+import { metaTags } from "../../constants";
 
 const Street = () => {
   const { pathname } = useLocation();
@@ -17,7 +18,7 @@ const Street = () => {
   return (
     <>
       <SetMetaTags
-        title={`Асфалтиране на малки и големи площи - ${metaTags.site_name}`}
+        title={`Асфалтиране на улици - ${metaTags.site_name}`}
         description={
           "Извършваме качествено асфалтиране в София и цялата страна на всякакви улици малки и големи на най-добри цени в България. Освен това нареждаме тротоари и бордюри. Имаме над 20 г. опит в сферата."
         }
@@ -25,7 +26,7 @@ const Street = () => {
           "полагане на асфалт, асфалтиране на пътища, асфалтиране на алей, полагане на асфалт на алеи, асфалтиране на малки площи, асфалтиране на големи площи"
         }
       />
-      <section className="w-full py-10 max-md:px-10">
+      <section className="w-full py-10 max-md:px-5">
         <div className="container mx-auto">
           <h1 className="text-3xl md:text-4xl">
             Асфалтиране на улици в София и страната

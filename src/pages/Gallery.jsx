@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { gallery } from "../constants";
+import SetMetaTags from "../components/meta-tags/SetMetaTags";
+import { gallery, metaTags } from "../constants";
 
 const Gallery = () => {
   const { pathname } = useLocation();
