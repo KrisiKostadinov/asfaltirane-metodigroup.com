@@ -23,6 +23,38 @@ const router = createBrowserRouter([
         path: "/za-nas",
         element: <About />,
       },
+      {
+        path: "/contacts",
+        element: <Contacts />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
+      },
+      {
+        path: "/asfaltirane-na-patishta",
+        element: <Rouds />,
+      },
+      {
+        path: "/asfaltirane-na-ulitsi",
+        element: <Street />,
+      },
+      {
+        path: "/afaltirane-na-dvor",
+        element: <Yard />,
+      },
+      {
+        path: "/asfaltirane-na-alei",
+        element: <Alley />,
+      },
+      {
+        path: "/narezhdane-na-trotoar",
+        element: <Sidewalk />,
+      },
+      {
+        path: "/asfaltirane-na-malki-i-golemi-ploshti",
+        element: <SmallAndBig />,
+      },
     ],
   },
 ]);
