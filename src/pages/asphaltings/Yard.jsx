@@ -4,6 +4,7 @@ import ClientsReviews from "../../components/clients-reviews/ClientsReviews";
 import Quality from "../../components/quality/Quality";
 import WhyUs from "../../components/why-us/WhyUs";
 import yardAsphalting from "../../assets/images/asphaltings/yard-asphalting.jpeg";
+import SetMetaTags from "../../components/meta-tags/SetMetaTags";
 
 const Yard = () => {
   const { pathname } = useLocation();

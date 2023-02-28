@@ -5,6 +5,7 @@ import ClientsReviews from "../../components/clients-reviews/ClientsReviews";
 import Quality from "../../components/quality/Quality";
 import WhyUs from "../../components/why-us/WhyUs";
 import streetAsphalting from "../../assets/images/asphaltings/street-asphalting.jpeg";
+import SetMetaTags from "../../components/meta-tags/SetMetaTags";
 
 const Street = () => {
   const { pathname } = useLocation();

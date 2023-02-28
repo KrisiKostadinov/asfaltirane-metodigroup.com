@@ -5,6 +5,7 @@ import WhyUs from "../../components/why-us/WhyUs";
 import smallAsphalting from "../../assets/images/asphaltings/small-asphalting.jpeg";
 import bigAsphalting from "../../assets/images/asphaltings/big-asphalting.jpeg";
 import { Link, useLocation } from "react-router-dom";
+import SetMetaTags from "../../components/meta-tags/SetMetaTags";
 
 const SmallAndBig = () => {
   const { pathname } = useLocation();
